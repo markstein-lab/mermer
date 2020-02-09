@@ -1,0 +1,14 @@
+[package]
+name = "mermer"
+version = "0.1.0"
+authors = ["Jakob L. Kreuze <zerodaysfordays@sdf.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mermer-rs = "0.1.0"
+
+[lib]
+name = "mermer_ffi"
+crate-type = ["dylib"]
