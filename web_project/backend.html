@@ -105,29 +105,55 @@
                         <input type="checkbox" name="intergenic" checked>
                         <label for="intergenic">Intergenic</label>
                         <br><br>
-                        <p>IUPAC Codes: </p>
-                        <ul>
-                            <li>A   Adenine</li>
-                            <li>C   Cytosine</li>
-                            <li>G   Guanine</li>
-                            <li>T   Thymine</li>
-                            <li>U   Uracil</li>
-                            <li>B = C|T|U|G = ~A</li>
-                            <li>D = A|T|U|G = ~C</li>
-                            <li>H = A|T|U|C = ~G</li>
-                            <li>K = T|U|G</li>
-                            <li>M = C|A</li>
-                            <li>N = A|C|G|T|U</li>
-                            <li>R = A|G</li>
-                            <li>S = C|G</li>
-                            <li>V = A|C|G = ~(T|U)</li>
-                            <li>W = T|U|A</li>
-                            <li>Y = C|T|U</li>
-                        </ul>
+                        <!-- <p>IUPAC Codes: </p> -->
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>IUPAC Codes:</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">IUPAC Codes:</button>
+  <div id="demo" class="collapse in">
+    <ul>
+        <li>A   Adenine</li>
+        <li>C   Cytosine</li>
+        <li>G   Guanine</li>
+        <li>T   Thymine</li>
+        <li>U   Uracil</li>
+        <li>B = C|T|U|G = ~A</li>
+        <li>D = A|T|U|G = ~C</li>
+        <li>H = A|T|U|C = ~G</li>
+        <li>K = T|U|G</li>
+        <li>M = C|A</li>
+        <li>N = A|C|G|T|U</li>
+        <li>R = A|G</li>
+        <li>S = C|G</li>
+        <li>V = A|C|G = ~(T|U)</li>
+        <li>W = T|U|A</li>
+        <li>Y = C|T|U</li>
+    </ul>
+  </div>
+</div>
 
                   </div>
+                  <script>
+                    // When the user scrolls down 20px from the top of the document, slide down the navbar
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("navbar").style.top = "0";
+                      } else {
+                        document.getElementById("navbar").style.top = "-50px";
+                      }
+                    }
+                    </script>
             
-          </div>
+          <!-- </div> -->
     <div class="main">
             <button type="button" class="btn btn-danger">Save Search</button>
             <button type="button" class="btn btn-danger">Download Log</button>
