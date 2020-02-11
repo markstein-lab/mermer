@@ -1,8 +1,11 @@
 /env
+.venv/
 
-#Added by cargo
-#
-#already existing elements are commented out
+# Dependency directories
+# d3.min.js
+# node_modules/
 
+# Compiled output
 /target
 **/*.rs.bk
+**/__pycache__/
