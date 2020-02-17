@@ -8,7 +8,8 @@ edition = "2018"
 
 [dependencies]
 mermer-rs = "0.1.0"
-
-[lib]
-name = "mermer_ffi"
-crate-type = ["dylib"]
+actix-web = "2.0"
+actix-rt = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_urlencoded = "0.5.1"
